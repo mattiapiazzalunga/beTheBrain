@@ -1,0 +1,901 @@
+/*Generali*/
+body {
+    max-width: 1600px;
+    min-width: 363px;
+    margin: 0 auto;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7,
+.col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5,
+.col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3,
+.col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12,
+.col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 
+{
+    padding-left:0;
+    padding-right:0;
+}
+.carousel {
+    width:100%;
+    height:100%;
+}
+fieldset input
+{
+    outline:none;
+} 
+hr
+{
+    width: 100%;
+    margin-bottom:50px;
+    margin-top:0;
+    border-color:#444444;
+    resize:"1";
+}
+.carousel-indicators {
+    margin-top:30px;
+    display:none;
+    position: relative ;
+}
+.spazi-classifica-frecce a{
+    font-size:0px;
+    margin-left:2px;
+}
+.modal-title
+{
+    color:rgb(255,102,0);
+    font-family: "Proxima-nova";
+    font-size: 30px;
+}
+.modal-body
+{
+    font-family: "Proxima-nova";
+}
+.modal-footer button
+{
+    background-color: rgb(255,102,0);
+    font-family: "Proxima-nova";
+    border:0;
+}
+.form-control
+ {
+    height: inherit ;
+    border:0px;
+    box-shadow:0px 0px 0px !important;
+    transition: none !important; 
+ }
+.carousel-indicators li {
+    background-color: rgb(255,102,0);
+    height: 16px !important;
+    width:16px !important;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    background-color: white ;
+    border: 2px solid #cacaca;
+}
+.testata{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position:relative;
+}
+.spazi {
+    background-color:white;
+    width:100%;
+    position:relative;
+}
+.bottone {
+    text-align: center;
+    background-color: transparent;
+    padding: 16px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition-duration: 1s;
+}
+.bottone span {
+    font-size: 14px;
+    font-family: "Proxima-nova";
+    font-weight: bold;
+}
+a
+{
+    color: rgb(102,102,102);
+    text-decoration: none !important;
+    cursor: pointer;
+}
+.classifica .table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: #efefef ;
+}
+/*Primo pezzo*/
+.testata-header{
+    height: 900px;
+    background-image: url("../img/sfondoprimarow.png");
+    background-position: center;
+}
+.logo {
+    width:100%;
+    display: block;
+    margin-top: 75px;
+    height:100px;
+    width:205px;
+}
+.testata-header-scritta {
+    font-size: 48px;
+    color: rgb(255,102,0);
+    font-family: "Oswald";
+    font-weight: 600;
+    margin-top:255px;
+}
+.testata-header-scritta span {
+    color: white;
+}
+.testata-header-bottone{
+    width: 252px;
+    border:1px solid white;
+    margin-top: 39px;
+    color:white;
+}
+/*Secondo pezzo*/
+.spazi-classifica-cervello-secondo {
+    height: 40vw;
+    width: 51.375vw;
+    position: absolute;
+    display:block;
+    bottom:0;
+    left:0;
+    z-index:0;
+    display: none;
+}
+.spazi-classifica {
+    padding-bottom:90px;
+}
+.spazi-classifica-cervello {
+    display:block;
+    bottom:0;
+    position: absolute;
+    height:570px;
+    width:750px;
+}
+.spazi-classifica-ilgioco {
+    width: 100%;
+    box-shadow: 10px 17px 40px rgba(0,0,0,.1);
+    margin-top: -90px;
+    background-color:white;
+    padding: 50px 40px;
+    position: relative;
+}
+.spazi-classifica-scritta {
+    font-size: 30px;
+    color: rgb(255,102,0);
+    font-family: "Oswald";
+    font-weight: bold;
+    margin-top: 70px;
+}
+.spazi-classifica-scritta span {
+    color:black;
+}
+.spazi-classifica-ilgioco p:nth-child(1) {
+    font-size: 30px;
+    color: rgb(255,102,0);
+    font-family: "Oswald";
+    font-weight: bold;
+    z-index:2;
+    position: relative;
+}
+.spazi-classifica-ilgioco p:nth-child(2) {
+    font-size: 18px;
+    color: black;
+    font-family: "Proxima-nova";
+    font-weight: bold;
+    z-index:2;
+    line-height: 24px;
+    position: relative;
+    margin-top:30px;
+}
+.spazi-classifica-ilgioco p:nth-child(3) {
+    font-size: 16px;
+    color: black;
+    font-family: "Proxima-nova";
+    font-weight: 300;
+    line-height: 26px;
+    z-index:2;
+    position: relative;
+    margin-top:30px;
+}
+.spazi-classifica-gioca {
+    margin-top:75px;
+    background-color: #333333;
+    padding: 43px 45px;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.spazi-classifica-gioca div:nth-child(1) p {
+    font-size: 30px;
+    color: rgb(255,255,255);
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.spazi-classifica-gioca div:nth-child(1) span {
+    font-size: 24px;
+    color: rgb(153,153,153);
+    font-family: "Proxima-nova";
+    font-weight: 300;
+    line-height: 24px;
+}
+.spazi-classifica-gioca a {
+    width: 180px;
+    border:1px solid #e4e4e4;
+    color:white;
+}
+.spazi-classifica-frecce {
+    float:right;
+}
+.spazi-classifica-frecce img {
+    width:50px;
+    height:50px;
+    transition-duration: .5s;
+}
+/*.classifica table secondo pezzo*/
+.classifica table {
+    margin-top: 30px;
+    width: 100% 
+}
+.classifica table tr {
+    display: flex;
+}
+.classifica table tr td {
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+    text-align: center;
+    font-family: "Proxima-nova";
+    font-size:12px;
+    align-self: center;
+}
+tbody {
+    border : 1px solid #dddddd;
+}
+.classifica table tr td:nth-child(1) {
+    font-size: 16px;
+    width: 13.75%;
+    line-height: 16px;
+    color:black;
+}
+.classifica table tr td:nth-child(2) {
+    width: 58.75%;
+    border-right: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    text-align: left;
+    padding-left:20px;
+}
+.classifica table tr td:nth-child(2) p {
+    font-size: 18px;
+    color: black;
+    font-family: "Proxima-nova";
+    font-weight: bold;
+    margin-bottom:5px;
+    line-height: 18px;
+}
+.classifica table tr td:nth-child(2) span {
+    color: rgb(102,102,102);
+    font-family: "Proxima-nova";
+    font-size: 12px;
+    line-height: 12px;
+}
+.classifica table tr td:nth-child(3) {
+    width: 27.5%;
+}
+.classifica table tr td:nth-child(3) span:first-child {
+    font-size: 20px;
+    color: black;
+    font-family: "Proxima-nova";
+    font-weight: bold;
+    line-height: 20px;
+}
+.classifica table tr td:nth-child(3) span:nth-child(2) {
+    font-size: 11px;
+    color: rgb(153,153,153);
+    font-weight: normal;
+    line-height: 11px;
+    position: relative;
+    top: -8px;
+    margin-left:5px;
+}
+.classifica table tr:nth-child(1) td:nth-child(1), .classifica table tr:nth-child(2) td:nth-child(1), .classifica table tr:nth-child(3) td:nth-child(1), .classifica table tr:nth-child(1) td:nth-child(2) p, .classifica table tr:nth-child(2) td:nth-child(2) p, .classifica table tr:nth-child(3) td:nth-child(2) p, .classifica table tr:nth-child(1) td:nth-child(3) span:first-child, .classifica table tr:nth-child(2) td:nth-child(3) span:first-child, .classifica table tr:nth-child(3) td:nth-child(3) span:first-child {
+    color:rgb(255,102,0);
+}
+/*Terzo pezzo*/
+.testata-lampadina{
+    margin-top: -14vw;
+    height: 50vw;
+    background-image: url("../img/sfondoTerzaRow.png");
+    background-position:center;
+    position:relative;
+    z-index:-1;
+}
+/*Quarto pezzo*/
+.testata-iscriviti{
+    background-image:url("../img/sfondo-iscriviti.png");
+}
+.iscriviti-bg{
+    background-color: white;
+    padding-left:5.5vw;
+    padding-right: 5.5vw;
+    margin-top: -11vw;
+    position:relative;
+    z-index: 3;
+    box-shadow: 10px 17px 40px rgba(0,0,0,.1);
+}
+.larghezzaInput{
+    width:100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0% !important;
+    border-bottom: 1px solid #cbcbcb !important;
+    padding:5px 10px !important;
+    font-size: 18px;
+    color: rgb(102,102,102);
+    font-family: "Proxima-nova";
+}
+.trattamento-privacy{
+    font-size: 11px;
+    color: rgb(102,102,102);
+    font-family: "Proxima-nova";
+    padding-left:9px;
+    font-weight: 400;
+    }
+.questionario{
+    font-size: 15px;
+    z-index: 5;
+    color: black;
+    font-family: "Proxima-nova";
+    position: absolute;
+    top:8px;
+    transition: .5s;
+    font-weight: bold; 
+}
+.iscriviti-h1{
+    padding:30px 0px;
+    font-size: 30px;
+    color:black;
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.iscriviti-img {
+    position: absolute;
+    left:-23vw;
+    bottom:70px;
+}
+.trattamento-privacy-display{
+    position: relative;
+    display:flex;
+    flex-direction: row !important;
+}
+.trattamento-privacy-display a
+{
+    transition-duration: .5s;
+    text-decoration: underline !important;
+}
+span.jcf-radio.jcf-unchecked{
+    height: 20px;
+    width: 20px;
+    border:1px solid #cacaca;
+    border-radius:20px;
+    margin-left:45px;
+}
+span.jcf-radio.jcf-checked{
+    height: 20px;
+    width: 20px;
+    border:1px solid #cacaca;
+    border-radius: 20px;
+    position:relative;
+    margin-left:45px;
+}
+.radioForm
+{
+    font-size: 15px;
+    color: black;
+    font-family: "Proxima-nova";
+    font-weight: bold; 
+}
+span.jcf-radio.jcf-checked:after{
+    content:'';
+    height: 12px;
+    width:12px;
+    border-radius:12px;
+    position:absolute;
+    display:block;
+    background-color:#00a0df;
+    top:3px;
+    left:3px;
+}
+span.jcf-checkbox.jcf-unchecked{
+    height: 14px !important;
+    min-width: 14px !important;
+    max-width: 14px !important;
+    border:1px solid #cacaca;
+    position: relative;
+    display:block;
+}
+span.jcf-checkbox.jcf-checked{
+    height: 14px !important;
+    min-width: 14px !important;
+    max-width: 14px !important;
+    border:1px solid #cacaca;
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+span.jcf-checkbox.jcf-checked:after{
+    content:'';
+    width: 10px;
+    height: 10px;
+    position:relative;
+    display:block;
+    background-image:url("../img/tick.png");
+    background-size:cover;
+}
+.gruppo
+{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    position: relative;
+    margin-top: 40px;
+}
+.grupporadio
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 40px;
+}
+.gruppo input
+{
+    margin-bottom: 0px;
+    position:relative;
+}
+.grupporadio  .jcf-radio
+{
+    display:block;
+    margin-left:5px;
+}
+.grupporadio  label:last-child
+{
+    padding-left:5px;
+}
+.grupporadio  label:nth-child(3)
+{
+    padding-left:5px;
+}
+.iscriviti-btn{
+    margin-bottom:58px;
+    margin-top:26px;
+    width: 182px;
+    border:1px solid rgb(255,102,0);
+    font-size: 14px;
+    color: rgb(255,102,0);
+    font-family: "Proxima-nova";
+    font-weight: bold;
+    background-color: white;
+}
+.iscriviti-img img{
+    height: 26vw;
+    width: 26vw;
+}
+/*Quinto pezzo*/
+.footer-condividi{
+    padding-top:255px;
+    font-size: 18px;
+    color: rgb(255,255,255);
+    font-family: "Oswald";
+    font-weight: bold;
+}
+.footer-testo2 a
+{
+    transition-duration: .2s;
+}
+.footer{
+    background-image: url("../img/sfondo-footer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top:-174px;
+    padding-bottom: 40px;
+}
+.footer-immagini{
+    display: inline-block;
+    padding-top:245px;
+}
+.footer .footer-immagini a img{
+    transition-duration: .5s;
+    height: 41px;
+    width:41px;
+    margin-left:12px;
+}
+.footer-testo2{
+    padding-top:35px;
+}
+#YourBiz-srl{
+    color: #cccccc;
+}
+.footer-second-row{
+    padding-top:40px;
+    font-size: 14px;
+    color: rgb(102,102,102);
+    font-family: "Proxima-nova";
+    font-weight: 300;
+}
+/*Media query*/
+@media only screen and (max-width: 1199px) {
+    .spazi-classifica{
+        padding-bottom:55px;
+   }
+   .testata-lampadina{
+    margin-top:-95px;
+    height: 490px;
+}
+   .spazi-classifica-cervello
+   {
+       width:475px;
+        height:460px;
+   }
+    .container {
+        margin-left:0 !important;
+        margin-right:0 !important;
+        width:100% !important;
+   }
+    .testata-header {
+        height: 580px;
+   }
+    .testata-header-scritta {
+        font-size: 32px;
+        margin-top:110px;
+        margin-left:25px;
+   }
+    .logo{
+        margin-top:45px;
+        margin-left:48px;
+        height: 90px;
+        width: 185px;
+   }
+    .testata-header-bottone {
+        margin-left:25px;
+   }
+    .spazi-classifica-ilgioco p:nth-child(1) {
+        font-size: 30px;
+   }
+    .spazi-classifica-ilgioco p:nth-child(2) {
+        font-size: 16px;
+   }
+    .spazi-classifica-ilgioco p:nth-child(3) {
+        font-size: 14px;
+   }
+    .spazi-classifica-gioca {
+        justify-content: center;
+        flex-direction: column;
+   }
+    .spazi-classifica-gioca div {
+        width: 100%;
+        text-align: center;
+   }
+    .spazi-classifica-gioca div:nth-child(1) p {
+        font-size: 24px;
+   }
+    .spazi-classifica-gioca div:nth-child(1) span {
+        font-size: 18px;
+   }
+    .spazi-classifica-gioca a {
+        margin:0 auto ;
+        margin-top:20px;
+   }
+    .spazi-classifica-ilgioco {
+        padding:40px 40px;
+   }
+    .spazi-classifica-gioca {
+        margin-top: 40px;
+        padding:35px 35px;
+   }
+    .spazi-classifica-scritta {
+        margin-top:25px;
+        font-size:29px;
+   }
+    .spazi-classifica-frecce img {
+        width:40px;
+        height:40px;
+   }
+    .footer-condividi{
+        font-size: 15px;
+        color: rgb(255,255,255);
+        font-family: "Oswald";
+        font-weight: bold;
+   }
+    .span.jck-checkbox.jcf-checked{
+        width:1.666vw;
+   }
+    .span.jck-checkbox.jcf-unchecked{
+        width:1.6667vw;
+   }
+}
+@media only screen and (max-width: 991px) {
+    .spazi-classifica {
+        padding-bottom:4vw;
+   }
+    .testata-header {
+        height: 145vw;
+        background-image: url(../img/sfondoprimarow1.png)   
+    }
+    .testata-header-scritta {
+        font-size: 5vw;
+        margin-top:89vw;
+        margin-left:0;
+   }
+    .logo{
+        margin-top:8.5vw;
+        margin-left:0;
+        width: 26vw;
+        height: 12.11vw;
+   }
+    .testata-header-bottone {
+        margin-left:0;
+        padding:2vw 4vw;
+        width:40.831vw;
+        margin-top:3vw;
+   }
+    .testata-header-bottone span {
+        font-size:2.8vw;
+   }
+    .spazi-classifica-ilgioco {
+        margin-top:0;
+        box-shadow: 0px 0px 0px;
+        background-color: transparent;
+        padding-left:7.568vw;
+        padding-right: 7.568vw;
+   }
+    .spazi-classifica-ilgioco p:nth-child(1) {
+        font-size: 4vw;
+        margin-top:0;
+   }
+    .spazi-classifica-ilgioco p:nth-child(2) {
+        font-size: 2.5vw;
+        margin-top:4vw;
+   }
+    .spazi-classifica-ilgioco p:nth-child(3) {
+        font-size: 2vw;
+        margin-top:4vw;
+   }
+    .spazi-classifica-gioca {
+        margin-top:0;
+        padding:5.045vw 5.045vw;
+   }
+    .spazi-classifica-gioca div:nth-child(1) p {
+        font-size: 4vw;
+   }
+    .spazi-classifica-gioca div:nth-child(1) span {
+        font-size: 3vw;
+        margin-top:3vw;
+   }
+    .spazi-classifica-gioca a {
+        margin-top:2.018vw;
+        padding: 2.7vw 2.7vw;
+        width:40vw;
+   }
+    .spazi-classifica-scritta {
+        font-size:4vw;
+        padding-left:7.568vw;
+        margin-top:40px;
+   }
+    .classifica table tr td:nth-child(1) p {
+        font-size:2vw;
+        line-height: 2vw;
+   }
+   .classifica table tr td:nth-child(2) p {
+        font-size:3vw;
+        line-height: 3vw;
+   }
+    .classifica table tr td:nth-child(2) span {
+        font-size:2vw;
+        line-height: 2vw;
+   }
+    .classifica table tr td:nth-child(3) span:nth-child(1) {
+        font-size:4vw;
+        line-height: 4vw;
+   }
+    .classifica table tr td:nth-child(3) span:nth-child(2) {
+        font-size:2vw;
+        line-height: 2vw;
+   }
+    .spazi-classifica-frecce {
+        display:none;
+   }
+    .spazi-classifica-cervello {
+        display:none;
+   }
+    .spazi-classifica-cervello-secondo {
+        display: inherit;
+   }
+    .bottone:nth-child(2) span {
+        font-size: 2.422vw;
+   }
+    .carousel-indicators {
+        display: inline-block;
+   }
+    .carousel {
+        padding-left:7.568vw;
+        padding-right: 7.568vw;
+   }
+    .iscriviti-img img{
+        display: none;
+   }
+    .span.jck-checkbox.jcf-checked{
+        width:2.018vw;
+   }
+    .span.jck-checkbox.jcf-unchecked{
+        width:2.018vw;
+   }
+}
+@media only screen and (max-width: 767px) {
+    .iscriviti-h1{
+        padding-top: 20px;
+        text-align: center;
+   }
+    .footer-condividi{
+        padding-top:200px;
+        text-align: center;
+   }
+   .spazi-classifica-ilgioco
+   {
+       padding: 5vw 10vw;
+   }
+
+.spazi-classifica-scritta
+{
+    font-size:5vw;
+}
+    .footer-immagini{
+        padding-top:0px;
+        display:flex;
+        width:100%;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+   }
+    .footer-immagini img{
+        margin-left:10px;
+        height: 41px;
+        width:41px;
+        display:block;
+   }
+    .footer-second-row{
+        padding-top:60px;
+        font-size:12px;
+   }
+    .iscriviti-bg{
+        padding-left:9vw;
+        padding-right:9vw;
+   }
+   .iscriviti-btn
+   {
+       width:100%;
+       font-size: 20px;
+   }
+   .spazi-classifica-ilgioco p:nth-child(1){
+    font-size: 7vw;
+}
+.spazi-classifica-ilgioco p:nth-child(2){
+    font-size:3.5vw;
+    margin-top:5vw;
+}
+.spazi-classifica-ilgioco p:nth-child(3){
+    font-size:3.5vw;
+    margin-top:5vw;
+}
+.spazi-classifica-gioca div:nth-child(1) p {
+    font-size: 5vw;
+}
+.spazi-classifica-gioca div:nth-child(1) span {
+    font-size: 4vw;
+    margin-top:3.027vw;
+}
+.classifica table tr td:nth-child(1) p {
+    font-size:2.421vw;
+    line-height: 2.421vw;
+}
+.classifica table tr td:nth-child(2) p {
+    font-size:3.5vw;
+    line-height: 3.5vw;
+}
+.classifica table tr td:nth-child(2) span {
+    font-size:2.816vw;
+    line-height: 2.816vw;
+}
+.classifica table tr td:nth-child(3) span:nth-child(1) {
+    font-size:5vw;
+    line-height: 5vw;
+}
+.classifica table tr td:nth-child(3) span:nth-child(2) {
+    font-size:2.816vw;
+    line-height: 2.816vw;
+}
+span.jcf-radio.jcf-unchecked{
+    margin-left:20px;
+}
+span.jcf-radio.jcf-checked{
+    margin-left:20px;
+}
+.radioForm, .questionario
+{
+    font-size: 13px;
+}
+.carousel-indicators li
+{
+    width:13px !important;
+    height: 13px !important;
+}
+.bottone
+{
+    letter-spacing: 0px;
+}
+}
+@media only screen and (max-width: 375px) {
+
+    span.jcf-checkbox.jcf-unchecked{
+        width: 10.666vw;
+   }
+    span.jcf-checkbox.jcf-checked{
+        width: 10.666vw;
+   }
+    .iscriviti-h1{
+        font-size:30px;
+   }
+}
+/*Hover*/
+.iscriviti-btn:hover{
+    color:white;
+    background-color:rgb(255,102,0);
+}
+tr:hover {
+    background-color: #cacaca !important;
+}
+.spazi-classifica-frecce img:hover {
+    transform: scale(.9,.9);
+}
+.spazi-classifica-gioca a:hover {
+    color:rgb(255,102,0) !important;
+    border-color: rgb(255,102,0);
+}
+.testata-header-bottone:hover {
+    color:rgb(255,102,0) !important;
+    border-color: rgb(255,102,0);
+}
+.footer-testo2 a:hover
+{
+    color:rgb(255,102,0);
+}
+.footer-immagini a img:hover
+{
+    transform: scale(.9,.9);
+}
+.trattamento-privacy-display a:hover{
+    color:rgb(255,102,0);   
+}
+/*Visited*/
+a:nth-child(1):visited
+{
+    color:white;
+}
+a:nth-child(2):visited
+{
+    color:white;
+}
+a:nth-child(3):visited
+{
+    color:rgb(255,102,0);
+}
+.modal-footer button
+{
+    background-color: rgb(255,102,0) !important;
+    outline: none !important;
+}

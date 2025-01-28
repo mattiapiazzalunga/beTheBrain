@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="it">
+   <head>
+      <title>BeTheBrain</title>
+      <!--meta-->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--Link fonts-->
+      <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700" rel="stylesheet">
+      <script>
+         (function(d) {
+           var config = {
+             kitId: 'tel0opw',
+             scriptTimeout: 3000,
+             async: true
+           },
+           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+         })(document);
+      </script>
+      <!--Link stile bootstrap 3-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style/bootstrap-datepicker.min.css">
+      <!--Link fogli di stile-->
+      <link rel="stylesheet" type="text/css" href="style/stile.css"/>
+    <!--Link favicon-->
+      <link rel="icon" href="img/favicon.ico" />
+   </head>
+   <body>
+      <div class="modal fade" id="Normativaprivacy" tabindex="-1" role="dialog" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h4 class="modal-title">Normativa per la privacy</h4>
+               </div>
+               <div class="modal-body">
+                  1. L'interessato o la persona presso la quale sono raccolti i dati personali sono previamente informati oralmente o per iscritto circa:<br>
+                  a) le finalita' e le modalita' del trattamento cui sono destinati i dati;<br>
+                  b) la natura obbligatoria o facoltativa del conferimento dei dati;<br>
+                  c) le conseguenze di un eventuale rifiuto di rispondere;<br>
+                  d) i soggetti o le categorie di soggetti ai quali i dati personali possono essere comunicati o che possono venirne a conoscenza in qualita' di responsabili o incaricati, e l'ambito di diffusione dei dati medesimi;<br>
+                  e) i diritti di cui all'articolo 7;<br>
+                  f) gli estremi identificativi del titolare e, se designati, del rappresentante nel territorio dello Stato ai sensi dell'articolo 5 e del responsabile. Quando il titolare ha designato piu' responsabili e' indicato almeno uno di essi, indicando il sito della rete di comunicazione o le modalita' attraverso le quali e' conoscibile in modo agevole l'elenco aggiornato dei responsabili. Quando e' stato designato un responsabile per il riscontro all'interessato in caso di esercizio dei diritti di cui all'articolo 7, e' indicato tale responsabile.<br><br>
+                  2. L'informativa di cui al comma 1 contiene anche gli elementi previsti da specifiche disposizioni del presente codice e puo' non comprendere gli elementi gia' noti alla persona che fornisce i dati o la cui conoscenza puo' ostacolare in concreto l'espletamento, da parte di un soggetto pubblico, di funzioni ispettive o di controllo svolte per finalita' di difesa o sicurezza dello Stato oppure di prevenzione, accertamento o repressione di reati.<br><br>
+                  3. Il Garante puo' individuare con proprio provvedimento modalita' semplificate per l'informativa fornita in particolare da servizi telefonici di assistenza e informazione al pubblico.<br><br>
+                  4. Se i dati personali non sono raccolti presso l'interessato, l'informativa di cui al comma 1, comprensiva delle categorie di dati trattati, e' data al medesimo interessato all'atto della registrazione dei dati o, quando e' prevista la loro comunicazione, non oltre la prima comunicazione.<br><br>
+                  5. La disposizione di cui al comma 4 non si applica quando:<br>
+                  a) i dati sono trattati in base ad un obbligo previsto dalla legge, da un regolamento o dalla normativa comunitaria;<br>
+                  b) i dati sono trattati ai fini dello svolgimento delle investigazioni difensive di cui alla legge 7 dicembre 2000, n. 397, o, comunque, per far valere o difendere un diritto in sede giudiziaria, sempre che i dati siano trattati esclusivamente per tali finalita' e per il periodo strettamente necessario al loro perseguimento;<br>
+                  c) l'informativa all'interessato comporta un impiego di mezzi che il Garante, prescrivendo eventuali misure appropriate. dichiari manifestamente sproporzionati rispetto al diritto tutelato, ovvero si riveli, a giudizio del Garante, impossibile.      
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-primary"  data-dismiss="modal">HO CAPITO!</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid">
+         <div class="row">
+            <div class="testata testata-header">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xs-11 col-xs-offset-1 col-md-12 col-md-offset-0">
+                        <a href="index.html"><img class="logo img-responsive" src="img/logo.png" alt="Logo della pagina"/></a>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-offset-1 col-xs-11 col-lg-offset-0 col-lg-12">
+                        <p class="testata-header-scritta">DIMOSTRA <span>DI AVERE LA MIGLIORE</span><br> CAPACITÀ LOGICA</p>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-offset-1 col-xs-11 col-lg-offset-0 col-lg-12">
+                        <a class="bottone testata-header-bottone"  href="#iscrizione">
+                        <span>SFIDA I TUOI AMICI</span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="spazi spazi-classifica">
+               <img src="img/cervello.png" class="spazi-classifica-cervello" alt="Cervello posizionato sullo sfondo"/>
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xs-12 col-md-offset-1 col-lg-offset-0 col-md-5 col-lg-6">
+                        <div class="spazi-classifica-ilgioco">
+                           <p>IL GIOCO</p>
+                           <p>#BeTheBrain è il nuovo gioco che ti permette di scoprire chi tra i tuoi amici è dotato della più grande capacità logica e matematica.</p>
+                           <p>Il gioco ha una durata di circa 30 minuti ed è composto da diversi moduli volti a testare la capacità di ragionamento logico, la predisposizione al calcolo e la memoria.
+                              È progettato da esperti in grado di valutare le reali abilità logico-matematiche, con un test preciso, professionale e ampiamente sperimentato. Per partecipare al gioco,
+                              devi ottenere un codice inviato da un tuo amico #BeTheBrain. Se non ne conosci, puoi richiedere l’accesso al gioco compilando il modulo a fondo pagina, motivando la tua richiesta. Se i nostri responsabili la 
+                              valuteranno positivamente, ti invieranno la partecipazione al gioco.
+                           </p>
+                           <img class="spazi-classifica-cervello-secondo" src="img/cervello.png" alt="Cervello posizionato sullo sfondo"/>
+                        </div>
+                        <div class="spazi-classifica-gioca">
+                           <div>
+                              <p>#BeTheBrain</p>
+                              <span>Sei il migliore? Dimostralo!</span>
+                           </div>
+                           <a class="bottone" href="#iscrizione">
+                           <span>CLICCA QUI!</span>
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-md-offset-1 col-md-4">
+                        <p class="spazi-classifica-scritta">CLASSIFICA<span> #BeTheBrain</span></p>
+                        <div id="myCarousel" class="carousel slide classifica" data-ride="carousel">
+                           <div class="carousel-inner">
+                              <div class="item active">
+                                 <table class="table table-striped">
+                                    <tbody>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class="item">
+                                 <table class="table table-striped">
+                                    <tbody>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano ghjghhjghj</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class="item">
+                                 <table class="table table-striped">
+                                    <tbody>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano fgdfgdfgd</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <div class="item">
+                                 <table class="table table-striped">
+                                    <tbody>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano gfdfggfd</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>1</td>
+                                          <td>
+                                             <p>Stefano Maffeis</p>
+                                             <span>stefanomaffeis@yourbiz.it</span>
+                                          </td>
+                                          <td>
+                                             <span>99</span><span>/100pt</span>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
+                           <ol class="carousel-indicators">
+                              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                              <li data-target="#myCarousel" data-slide-to="1"></li>
+                              <li data-target="#myCarousel" data-slide-to="2"></li>
+                              <li data-target="#myCarousel" data-slide-to="3"></li>
+                           </ol>
+                           <div class="spazi-classifica-frecce">
+                              <a href="#myCarousel" data-slide="prev">
+                              <img src="img/frecciaSX.png" alt="Freccia per spostarsi indietro nella classifica"/>
+                              </a>
+                              <a href="#myCarousel" data-slide="next" >
+                              <img src="img/frecciaDX.png" alt="Freccia per spostarsi avanti nella classifica"/>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="testata testata-lampadina"> </div>
+         </div>
+         <div class="row">
+            <div class="testata testata-iscriviti">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-7 col-md-offset-4 col-xs-12">
+                        <div class="iscriviti-bg">
+                           <form id="iscrizione" action="/submit" method="POST">
+                              <div class="iscriviti-img">
+                                 <img src="img/iscriviti.png" alt="iscriviti"/>
+                              </div>
+                              <fieldset>
+                                 <h1 class="iscriviti-h1">ISCRIVITI E PARTECIPA ANCHE TU!</h1>
+                                 <div class="gruppo">
+                                    <label class="questionario" onclick="formeffect(this.id,'nomeInput')" id="nome">Nome e cognome</label>
+                                    <input type="text" name="nome" onfocus="formeffect('nome',this.id)" onblur="formeffect2('nome',this.id)"  class="larghezzaInput" id="nomeInput" required/>
+                                 </div>
+                                 <div class="gruppo">
+                                    <label class="questionario" onclick="formeffect(this.id,'cittàInput')"  id="città">Città</label>
+                                    <input type="text" name="città"  onfocus="formeffect('città',this.id)"  onblur="formeffect2('città',this.id)"   class="larghezzaInput" id="cittàInput" required/>
+                                 </div>
+                                 <div class="gruppo">
+                                    <label class="questionario"  onclick="formeffect(this.id,'annoInput')" id="anno">Anno di nascita</label>
+                                    <input type='text'name="anno"  onfocus="formeffect('anno',this.id)"  onblur="formeffect2('anno',this.id)"     class="form-control larghezzaInput" id="annoInput" required />
+                                 </div>
+                                 <div class="gruppo">
+                                    <label class="questionario" onclick="formeffect(this.id,'mailInput')"  id="mail">Indirizzo e-mail</label>
+                                    <input type="email" name="email" onfocus="formeffect('mail',this.id)"   onblur="formeffect2('mail',this.id)"     class="larghezzaInput" id="mailInput" required/>
+                                 </div>
+                                 <div class="gruppo">
+                                    <label class="questionario"  onclick="formeffect(this.id,'fbInput')" id="fb">Profilo FB</label>
+                                    <input type="text" name="facebook" onfocus="formeffect('fb',this.id)"    onblur="formeffect2('fb',this.id)"     class="larghezzaInput" id="fbInput" required/>
+                                 </div>
+                                 <div class="gruppo">
+                                    <label class="questionario"  onclick="formeffect(this.id,'linkedinInput')" id="linkedin">Profilo Linkedin</label>
+                                    <input name="ln"  onfocus="formeffect('linkedin',this.id)"    onblur="formeffect2('linkedin',this.id)"     type="text" class="larghezzaInput" id="linkedinInput" required/>
+                                 </div>
+                                 <div class="grupporadio">
+                                    <label class="radioForm">Hai un codice #BeTheBrain?</label>
+                                    <input type="radio" name="siono" value="0" checked /> <label >Sì</label>
+                                    <input type="radio" name="siono" value="1"/> <label>No</label>
+                                 </div>
+                                 <div class="gruppo">
+                                    <label class="questionario" onclick="formeffect(this.id,'motivazioneInput')"  id="motivazione">Voglio partecipare a #BeTheBrain perchè...</label>
+                                    <input type="text" name="motivazione" onfocus="formeffect('motivazione',this.id)"   onblur="formeffect2('motivazione',this.id)"    class="larghezzaInput" id="motivazioneInput"/>
+                                 </div>
+                                 <div class="gruppo trattamento-privacy-display">
+                                    <input type="checkbox" value="consento" id="ioconsento" required/>   
+                                    <label class="trattamento-privacy" for="ioconsento">Consento al trattamento dei miei dati personali ai sensi dell'art.13 del D. Lgs. 30/06/2003 n. 196. <a data-toggle="modal" data-target="#Normativaprivacy">(Leggi)</a></label>
+                                 </div>
+                                 <input type="submit" value="ISCRIVITI" class="iscriviti-btn bottone"/>
+                              </fieldset>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="footer">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-offset-4 col-sm-offset-4 col-md-4 col-sm-4 col-xs-12">
+                        <p class="footer-condividi">CONDIVIDI #BETHEBRAIN SUI SOCIAL NETWORK</p>
+                     </div>
+                     <div class="col-md-4 col-sm-4-col-xs-12">
+                        <div class="footer-immagini">
+                           <a href="https://www.facebook.com" target="_blank"><img  src="img/facebook.png" alt="Facebook"/></a>
+                           <a href="https://www.twitter.com" target="_blank"><img  src="img/twitter.png" alt="Twitter"/></a>
+                           <a href="https://www.pinterest.com" target="_blank"><img  src="img/pinterest.png" alt="Pinterest"/></a>
+                           <a href="https://www.plus.google.com" target="_blank"><img  src="img/piu.png" alt="Google Plus"/></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="footer-second-row">
+                        <div class="col-md-offset-4 col-sm-offset-4 col-md-7 col-sm-7 col-xs-offset-1 col-xs-10">
+                           <!-- COLONNE SBALLATE -->
+                           <hr>
+                        </div>
+                        <div class="col-md-offset-4 col-sm-offset-4 col-md-5 col-sm-6 col-xs-offset-1 col-xs-11">
+                           <div class="footer-testo1">
+                              <p>Un progetto:</p>
+                              <p><span id="YourBiz-srl">YourBiz srl</span></p>
+                              <p>Via Provinciale Dalmine Almè, 20</p>
+                              <p>24048 Treviolo (BG)</p>
+                              <p>Tel. 035.4327284 - fax. 035.5095767 - E-Mail: info@yourbiz.it</p>
+                              <p>P.I./C.F. 02943820163 - N.ro REA: BG - 0335829 C.S. € 10.000,00</p>
+                           </div>
+                        </div>
+                        <div class="col-md-2 col-md-offset-1 col-sm-1 col-xs-offset-1 col-xs-11">
+                           <div class="footer-testo2">
+                              <a>
+                                 <p>Regolamento</p>
+                              </a>
+                              <a>
+                                 <p>Informativa</p>
+                              </a>
+                              <a>
+                                 <p>Responsabile</p>
+                              </a>
+                              <a>
+                                 <p>Privacy</p>
+                              </a>
+                              <a>
+                                 <p>Cookies</p>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Link script bootstrap 3-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <!--Script-->
+      <script src="librerie/js/jcf.js"></script>
+      <script src="librerie/js/jcf.radio.js"></script>
+      <script src="librerie/js/jcf.checkbox.js"></script>
+      <script src="librerie/js/jcf.select.js"></script>
+      <script src="librerie/js/bootstrap-datepicker.min.js"></script>
+      <script src="script/script.js"></script>
+   </body>
+</html>
